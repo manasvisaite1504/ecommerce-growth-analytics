@@ -1,4 +1,3 @@
-cat > src/01_smoke_test_kpis.py << 'EOF'
 import os
 import duckdb
 
@@ -11,7 +10,7 @@ def file_path(filename: str) -> str:
 def main():
     con = duckdb.connect(DB_PATH)
 
-    # TODO: update filenames if yours are different
+    # Update filenames if your CSV names are different
     con.execute(f"""
         CREATE OR REPLACE TABLE orders AS
         SELECT * FROM read_csv_auto('{file_path("olist_orders_dataset.csv")}', header=True);
@@ -63,4 +62,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-EOF
