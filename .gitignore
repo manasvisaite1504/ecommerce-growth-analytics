@@ -3,6 +3,13 @@ __pycache__/
 *.py[codz]
 *$py.class
 
+data/raw/
+data/processed/
+*.duckdb
+*.sqlite
+
+
+
 # C extensions
 *.so
 
