@@ -3,7 +3,7 @@ import duckdb
 
 DB_PATH = "ecom.duckdb"
 OUT_DIR = "data/processed"
-SQL_PATH = "/Users/manasvi15/Desktop/ecommerce-growth-analytics/src/sql/03_cohort_retention.sql"
+SQL_PATH = "src/sql/03_cohort_retention.sql"
 
 def main():
     os.makedirs(OUT_DIR, exist_ok=True)
